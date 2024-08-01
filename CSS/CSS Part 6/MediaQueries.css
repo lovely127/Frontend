@@ -1,0 +1,52 @@
+h1{
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+/*Media query - width*/
+@media (width:400px)    /* when tge screen width will be 400 exactlt this change will visible
+                        inspect->widhth by scrolin left (This exactly wala we are not using practically*/
+{
+    h1{
+        background-color: red;
+        color: white;
+    }
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+    }
+
+}
+
+/* using in practical cases*/
+@media (min-width:700px)    /*Jab width 400px ya usse badi hogi to color change hoga*/
+{
+    h1{
+        background-color: greenyellow;
+    }
+}
+
+@media (max-width:200px)
+{
+    h1{
+        background-color: pink; /* widht agar 200 ya usse chhoti*/
+    }
+}
+
+@media (min-width:200px) and (max-width:300px) /*if width range from 200 to 300px*/
+{
+    h1{
+        background-color: blue;
+    }
+}
+
+/*Media Query - Orientation*/
+@media (orientation:landscape)
+{
+    h1{
+        background-color: aqua;
+        color: brown;
+    }
+
+}

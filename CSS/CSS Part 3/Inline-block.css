@@ -1,0 +1,28 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    margin: 5px;
+    /*ab jaise hi div ko  inline banane ki koshish krenge iski sari
+     property chli jayenegi bss horizontal margin reh jayegi*/
+     /*display: inline;*/
+     /*koi bhi esa block element jiski styling bhi reh jaye or wo 
+     inline bhi bss jaye uske liye inline-block ka use krte hain*/
+
+    display: inline-block;
+
+    /*style block element ki tarah apply hoga
+    behave inline element ki tarah krenge
+    Use case - Jab hme chahye ki hmare block element
+    single line ke andar aa jaye but unki css property
+    bhi loose na ho*/
+    
+}
+
+/*display:none propery, sari style gayab ho jati h- dib gayab ho jayega*/
+#third{
+    display: none;
+}
+/*Use cse - kai baar web pages pe kuchh ese elements hote hain jo hm
+chahte hain ki hidden rahe kuchh time ke liye,unko baad me display krenge*/

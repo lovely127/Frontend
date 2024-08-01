@@ -1,0 +1,77 @@
+#container{
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    border: 2px solid black;
+    margin: 10px auto;
+    display: flex; /*ab overflow nhi honge sare divs parent div ke andar aa jayege,default diection-row*/
+    flex-direction: row;
+    justify-content: flex-start;
+    /*flex-wrap: wrap;*/
+
+
+    /*align-items: flex-start; /*Elements top ki taraf move honge (cross axis top to bottom)*/
+   /* align-items: flex-end; /*Elements bottom ki taraf move honge (cross axis top to bottom)*/
+    /*align-items: center; /*Elements center ki taraf move ho jayenge both top and bottom*/
+    /*align-items: baseline;*/
+
+
+    align-content: flex-start; /*top ki taraf move ho jayega cross axis top to bottom*/
+    /*align-content: flex-end;    /*bottom ki taraf shift ho jayegi*/
+
+    /*align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly;*/
+
+}
+
+/*Align self demo*/
+#org{
+    align-self: flex-start; /*no change*/
+    /*align-self: flex-end;  /*orange bottom right me chlr jayega*/
+    /*align-self: center;*/
+
+    /*flex sizing - flex-basis*/
+
+    /*flex-basis: 300px;*/
+    /*flex-basis: 20px; /*fonr size ki wajah se 20px ka ni ho pa ra h to fon size hta deta hain filhal*/
+    /*Orange wale div ka size 20px ho jayega*/
+    /*size mtlb width kyuki abhi flex diection row h*/
+
+    /*flex sizing - flex-grow*/
+   /* flex-grow: 1;*/
+
+   /*flex sizing - flex-shrink*/
+   flex-shrink: 1;
+
+
+}
+
+#blue{
+    /*flex-basis: 400px;*/
+    /*flex-grow: 1; /*jitni bhi available space hogi blue sare space ko gher lega*/
+    /*Agar orange ko bhi 1 kr de to blue and orange equal proportion me space ko baat ke occupy kr lenge*/
+    /*flex-grow: 2;  /*ab blue ko orange ke double space milegi*/
+
+    /*Max and min width bhi set kr sakte h*/
+    /*max-width: 300px;*/
+    flex-shrink: 2;
+}
+
+
+
+
+
+h1{
+   
+ text-align: center;
+}
+
+#container div{
+    height: 100px;
+    width: 300px; 
+    color: white;
+    text-align: center;
+    /*font-size: 1.5em;*/
+}
+

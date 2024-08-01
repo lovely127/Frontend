@@ -1,0 +1,136 @@
+*{
+    font-family: 'Courier New';
+}
+
+
+/*Element Selector */
+h3{
+    color: purple;
+}
+
+h1{
+    color: #b92b27;
+
+}
+
+/* Id Selector */
+#login{
+    background-color: white;
+}
+
+#signup
+{
+    background-color:#b92b27;
+    color: whitesmoke;
+}
+
+/*Class Selector */
+.upvote{
+    background-color: green;
+}
+
+/*Descedent Selector */
+/*Hme bss paragraph ke andar wale anchor tags ka color change krna h */
+/*p a{
+    color: purple;
+    background-color: yellow;
+}*/
+/*Or jyada decent tareeka descendent ko use krne ka ki outer element ko class de do*/
+/*for eg hme line no 74 wale google wale anchor tag ko color ni krna jabki wo bhi
+paragraph ke andar h, lekin hme baki sare anchor tag jo paragraph ke andar hain unko clor krna h*/
+.post a{
+    color: black;
+    background-color: yellow;
+}
+/*Descendent selector me hm multiple leves bhi le sakte hain*/
+nav ul li a{
+    color: hotpink;
+}
+
+
+/*Sibling Combinator*/
+p+h3{
+    text-decoration: underline;
+}
+
+.upvote+button{
+    background-color: cornflowerblue;
+    color: black;
+}
+
+/*Child Combinator -- direct children*/
+div>input{
+    background-color: darksalmon;
+    color: darkblue;
+}
+
+nav>a{
+    color: black;  /*This will not work kyuki direct child nhi h , ye wala descendent me kr sakte hain*/
+}
+
+/*Attribute selector*/
+input[type = "text"] {
+    color:green;
+}
+
+input[type = "password"] {
+    color: red;
+}
+
+/*input[type] {
+    background-color: ghostwhite;
+}*/      /*sare type attribute ke liye*/
+
+/*Practice Ques 2*/
+div[id="myID"] p {
+    color: green;
+}
+
+
+/*psedo class*/
+/* (1) hover class - hover krne se sate change*/
+button:hover{
+    background-color: black;
+    color: white;
+}
+h3:hover{
+    text-decoration: none;
+}
+
+/* (2) active class - click krne se state change*/
+button:active{
+    background-color: hotpink;
+    color: black;
+}
+p:active{
+    font-weight: bold;
+    color: green;
+}
+
+/* (3) checked class - select krne se state change*/
+input[type = "radio"]:checked + label{
+    color: red;
+    font-weight: bold;
+}
+
+/* (3) nth-of-type() class - nth element ka state change*/
+.post:nth-of-type(2){
+    background-color: lavenderblush;
+}
+.post:nth-of-type(2n){
+    background-color: lavenderblush;
+}
+
+
+/*Specififcity*/
+h3{
+    background-color: yellow;
+}
+h3{
+    background-color: blue;
+}
+
+/*!important - Fix ho jata h iska color*/
+h3{
+    background-color: antiquewhite !important;
+}

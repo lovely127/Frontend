@@ -1,0 +1,58 @@
+#container{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    border: 2px solid black;
+    margin: 10px auto;
+    display: flex; /*ab overflow nhi honge sare divs parent div ke andar aa jayege,default diection-row*/
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    /*flex-direction*/
+
+    /*flex-direction: row-reverse; /*main axis right to left -- right me first elemnt aayega*/
+    /*flex-direction: column;*/
+    /*flex-direction: column-reverse;/*main axis botton to top -- bottom me first elemt aayega*/
+
+    /*justify-Content*/
+    /*flex-direction: row;
+    justify-content: flex-start;
+
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+
+    flex-direction: row;
+    justify-content: flex-end;    /*noticable*/
+
+    /*flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    justify-content: center;
+    
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;*/
+
+
+
+    
+    /*Flex Wrap*/
+    /*flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse; /*cross axis ki reverse dir me wrap*/
+
+
+}
+
+h1{
+   
+ text-align: center;
+}
+
+#container div{
+    height: 100px;
+    width: 300px; /*divs ki widhts 300px krne ke liye flex wra ka use kreneg*/
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}

@@ -1,0 +1,20 @@
+/*inline element*/
+span{
+    background-color: pink;
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    padding: 50px;
+    margin: 50px; /*will work only horizontally means left and right me set hogi*/
+}
+
+/* apply same property in block element - sare property apply honge*/
+
+div{
+    background-color: pink;
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    padding: 50px;
+    margin: 50px;
+}

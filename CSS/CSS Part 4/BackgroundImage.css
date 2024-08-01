@@ -1,0 +1,11 @@
+div{
+    width: 600px;
+    height: 400px;
+    background-color: #7aa874;
+    margin: 10px auto;
+    background-image: url(BackgroundLeavesImage.jpg);
+    /*background-size: contain;
+    background-size: auto;*/
+    background-size: cover;/*Best way is cover*/
+    color: white;
+}

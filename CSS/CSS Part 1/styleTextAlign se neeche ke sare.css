@@ -1,0 +1,35 @@
+h1{
+    text-align: right;
+   /* border: solid;*/
+    width: 70%;
+    /*ye text document ke right me nhi hoga, apne parent element
+    h1 ko jitni space mili h uske right me hota h*/
+    text-decoration: underline;
+    text-decoration-style: double;
+    letter-spacing: 10px;
+    font-size: 50px;
+}
+a{
+    text-decoration: none;
+}
+h3{
+    text-align: center;
+    text-decoration: red overline;
+    text-decoration-style: wavy;
+}
+p{
+    text-align: right;
+    /*text-align: justify;*/
+    line-height: 2;
+   /* line-height: 0.5;*/
+   font-size: 15px;
+}
+h2{
+   font-weight: 800;
+   text-decoration: purple line-through;
+   text-decoration-style: dotted;
+   
+}
+p{
+    font-weight: bold;
+}

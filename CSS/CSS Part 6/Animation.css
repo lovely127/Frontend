@@ -1,0 +1,103 @@
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+
+    /*Animation functions*/
+    animation-name: fontAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: 3;
+    /*animation-iteration-count: infinite;*/
+    animation-direction: normal;
+    /*animation-direction: reverse;
+    animation-direction: alternate;
+    animation-direction: alternate-reverse;*/
+
+    animation-name: colorAnimate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: 3;
+    animation-direction: normal;
+
+    /*animation-name: widthAnimate;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: 3;
+    animation-direction: normal;*/
+
+    /*Animation shorthand*/
+    animation: widthAnimate 3s ease-in 0s 3 normal;
+
+    /*Animation for multiAnimate*/
+    animation: multiAnimate 4s ease-in 0s 4 normal;
+
+    animation: colAnimate 4s ease-in 0s 2 normal;
+}
+
+
+
+
+/*This is blueprint fir animation ka naam deke uspe properties apply krenge*/
+@keyframes fontAnimation{
+    from{
+        font-size: 20px;
+    }
+    to{
+        font-size: 50px;
+    }
+}
+
+@keyframes colorAnimate{
+    from{
+        background-color: green;
+    }
+    to{
+        background-color: blue;
+    }
+}
+
+@keyframes widthAnimate{
+    from{
+        width: 10px;
+    }
+    to{
+        width: 400px;
+    }
+}
+
+/*We can animate multiple property sath me*/
+@keyframes multiAnimate{
+    from{
+        height: 50px;
+        width: 10px;
+        background-color: aqua;
+    }
+    to{
+        height: 400px;
+        width: 400px;
+        background-color: azure;
+        border-radius: 50px;
+    }
+}
+
+/* % Animation demo*/
+@keyframes colAnimate{
+    0%{
+        background-color: blue;
+    }
+    50%
+    {
+        background-color: green;
+    }
+    80%{
+        background-color: aqua;
+    }
+    100%
+    {
+        background-color: blueviolet;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+</head>
+<body>
+    <button>Hello</button> <!--form ke baahar button work nhi krna, khi bh redirect nhi krega-->
+    <form action ="/action">  <!--jab button pe click krenge to yha redirect hoga-->
+    
+        <div>
+            <label for="Username">Username</label> <!--Lable wala for and id shlud be same-->
+        <input type="text" placeholder="Enter Username" id = "Username">
+        </div>
+        <div>
+            <label for=" Password">Password</label>
+        <input type="password" placeholder="Enter password" id= "Password">
+        </div>
+        <button> Submit</button> <!--defautl type-->
+
+        <!--Types of button-->
+        <button type = "submit">Submit type 1</button> <!--isse action page pe redirect hota h-->
+        <button type = "button"> Hello type 2</button> <!--isse kuchh nhi hota-->
+        <button type = "reset">Reset type 3</button> <!--isse form ka data reset hota h-->
+
+    </form>
+</body>
+</html>

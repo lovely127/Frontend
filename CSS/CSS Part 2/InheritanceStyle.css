@@ -1,0 +1,20 @@
+/*div{
+    background-color: blue;
+}
+p{
+    background-color: yellow;
+}*/
+div{
+    background-color: yellow;
+}
+form{
+    background-color: red;
+}
+
+/* By default input box and button apne parent ki proprties ko inherit nhi krte agar inherit karanah tp*/
+input{
+    background-color: inherit;
+}
+button{
+    background-color: inherit;
+}

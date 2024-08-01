@@ -1,0 +1,54 @@
+
+/*For color.html
+       /*h1{
+         color: red;
+       }
+        p{
+            color: red;
+            background-color: aqua;
+        }
+        button{
+            color: gold;
+            background-color: black;
+        }*/
+
+
+/*For ColorSystem RGB*/
+       /* h1{
+            color: rgb(255,0,0);
+        }
+        h2{
+            color: rgb(0,255,0);
+        }
+        h3{
+            color: rgb(0,0,255);
+        }
+        h4{
+            color: rgb(255,255,0);
+        }
+        h5{
+            color: rgb(0,255,255);
+        }
+        h6{
+            color: rgb(120,43,145);
+        }*/
+
+/*For ColorSystem Hex*/
+h1{
+    color: #000000;
+}
+h2{
+    color: #ff0000;
+}
+h3{
+    color: #00ff00;
+}
+h4{
+    color: #0000ff;
+}
+h5{
+    color: #ff1822;
+}
+h6{
+    color: #123456;
+}

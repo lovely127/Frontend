@@ -1,0 +1,16 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: #4dff00ff;
+    margin-top: 10px;
+    margin: 0 auto; /* element ko center me lane ke liye, left right se same distant*/
+    transition: margin-top 2s ease-in 0.2s;
+    /*transition-duration: 1s;
+    transition-delay: 1s; /*1 sec ru ke fir 1 sec baad change hogi state*/
+}
+div:hover{                    /*jab hover krenge to ye sari state change hongi*/
+    background-color: pink;
+    /*border-radius: 50%;*/
+    margin-top: 400px;
+
+}

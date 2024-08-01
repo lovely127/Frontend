@@ -1,0 +1,20 @@
+.box{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: pink;
+}
+
+.one{
+    background-color: aquamarine;
+    /*without position z index will not work*/
+    /*position:static;*/ /*for static postion also z index will not work*/
+    position: relative;
+    z-index: -2; /*ab 1 wala dibba upper aa jayega*/
+}
+.two{
+    background-color: darksalmon;
+    position: relative;  
+    bottom: 50px; /*apni jagah se 50px upper aa jayega*/
+    z-index: -1; /*try comnination of positive and negatives*/
+}

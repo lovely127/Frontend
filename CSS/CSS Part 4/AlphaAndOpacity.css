@@ -1,0 +1,11 @@
+/*Alpha demo*/
+div{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255, 0, 0, 0.5); /* alpha value 1 krenge to red color dikhaega 0 pe gayab 0 se 1 ke beech light red*/
+}
+/*Opacity Demo*/
+#opacity{
+    background-color: #ffa511;
+    opacity: 0;  /*alpha bss color pe apply hota h, opacity elements pe bhi, 0 krenge to sab gaayb hi jayega*/
+}
